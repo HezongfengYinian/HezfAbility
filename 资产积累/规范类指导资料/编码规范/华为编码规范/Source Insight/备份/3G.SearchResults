@@ -1,0 +1,7 @@
+---- BAUD_RATE_460800 Æ¥Åä (6 in 1 ÎÄ¼þ) ----
+Usart.c (f:\code--test\main\zigbee\stm32\stm32f20x\3g\drivers):#define BAUD_RATE_460800    460800
+Usart.c (f:\code--test\main\zigbee\stm32\stm32f20x\3g\drivers):    else if (cfg->baud_rate == BAUD_RATE_460800)
+Usart.c (f:\code--test\main\zigbee\stm32\stm32f20x\3g\drivers):	config.baud_rate = BAUD_RATE_460800;
+Usart.c (f:\code--test\main\zigbee\stm32\stm32f20x\3g\drivers):	config.baud_rate = BAUD_RATE_460800;
+Usart.c (f:\code--test\main\zigbee\stm32\stm32f20x\3g\drivers):	config.baud_rate = BAUD_RATE_460800;
+Usart.c (f:\code--test\main\zigbee\stm32\stm32f20x\3g\drivers):	config.baud_rate = BAUD_RATE_460800;

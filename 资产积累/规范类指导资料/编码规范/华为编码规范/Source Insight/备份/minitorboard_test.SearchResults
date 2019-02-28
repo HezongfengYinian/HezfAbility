@@ -1,0 +1,5 @@
+---- save_option Æ¥Åä (5 in 1 ÎÄ¼þ) ----
+Mcp2510.c (f:\yiri\p4_main\main\zigbee\stm32\stm32f2xx\monitor_station\drivers):CFG_OPTION_T save_option ;
+Mcp2510.c (f:\yiri\p4_main\main\zigbee\stm32\stm32f2xx\monitor_station\drivers):	save_option = *(CFG_OPTION_T *)pdata_flash; 
+Mcp2510.c (f:\yiri\p4_main\main\zigbee\stm32\stm32f2xx\monitor_station\drivers):	rt_kprintf(" Bsid = %d   Bsip = %d \n ",save_option.u32BsId,save_option.u32BsIp);
+Mcp2510.c (f:\yiri\p4_main\main\zigbee\stm32\stm32f2xx\monitor_station\drivers):	rt_memcpy(buff,&save_option,sizeof(CFG_OPTION_T));

@@ -1,0 +1,15 @@
+---- net_mq 匹配 (11 in 4 文件) ----
+Application.c (f:\yiri\p4_main\main\zigbee\stm32\stm32f2xx\basic_station\applications):    rt_mq_init(&net_mq, "NETMQ", u8NetPool, MSG_NET_PKT_SIZE,
+Bsmac_parser.c (f:\yiri\p4_main\main\zigbee\stm32\stm32f2xx\basic_station\applications):			err = rt_mq_send(&net_mq, au8Buf, PacketTag.len + sizeof(PACKET_HEADER_T));
+Bsmac_parser.c (f:\yiri\p4_main\main\zigbee\stm32\stm32f2xx\basic_station\applications):           		 ERROR_LOG("send to net_mq full\n");
+Bsmac_parser.c (f:\yiri\p4_main\main\zigbee\stm32\stm32f2xx\basic_station\applications):            		ERROR_LOG("send to net_mq err\n");
+Net_app.c (f:\yiri\p4_main\main\zigbee\stm32\stm32f2xx\basic_station\applications):struct rt_messagequeue net_mq;
+Net_app.c (f:\yiri\p4_main\main\zigbee\stm32\stm32f2xx\basic_station\applications)://    rt_mq_send(&net_mq, buf, sizeof(PACKET_HEADER_T) + hdr->len);
+Net_app.c (f:\yiri\p4_main\main\zigbee\stm32\stm32f2xx\basic_station\applications): //   rt_mq_send(&net_mq, buf, sizeof(PACKET_HEADER_T) + hdr->len);
+Net_app.c (f:\yiri\p4_main\main\zigbee\stm32\stm32f2xx\basic_station\applications):    err = rt_mq_recv(&net_mq, send_buf, MSG_ANALYSER_PKT_SIZE, RT_WAITING_NO);
+Net_app.c (f:\yiri\p4_main\main\zigbee\stm32\stm32f2xx\basic_station\applications):	rt_kprintf(" sensor data send to net_mq success\n");
+Net_app.c (f:\yiri\p4_main\main\zigbee\stm32\stm32f2xx\basic_station\applications)://    rt_mq_send(&net_mq, report_msg_buf, sizeof(PACKET_HEADER_T) + sizeof(pan_restart_t));
+Net_app.h (f:\yiri\p4_main\main\zigbee\stm32\stm32f2xx\basic_station\applications):extern struct rt_messagequeue net_mq;
+---- net_mq 搜索遇到错误 (1) ----
+以下1个文件不能被处理：
+F:\yiri\P4_Main\main\ZigBee\stm32\stm32f2XX\Basic_station\obj\rtthread-stm32.build_log.htm : 文件打不开。

@@ -1,0 +1,11 @@
+---- alarm_state 匹配 (12 in 1 文件) ----
+Mcp2510.c (f:\code\main\zigbee\stm32\stm32f20x\monitor_station\drivers):    uint8_t alarm_state;
+Mcp2510.c (f:\code\main\zigbee\stm32\stm32f20x\monitor_station\drivers):char alarm_state;
+Mcp2510.c (f:\code\main\zigbee\stm32\stm32f20x\monitor_station\drivers):					alarm_state = psensor->alarm_state ;
+Mcp2510.c (f:\code\main\zigbee\stm32\stm32f20x\monitor_station\drivers):					alarm_state = psensor_switch->alarm_state ;
+Mcp2510.c (f:\code\main\zigbee\stm32\stm32f20x\monitor_station\drivers):                        if( (char)ConverToByeFloat(&rxbuf0[2]) == alarm_state )   
+Mcp2510.c (f:\code\main\zigbee\stm32\stm32f20x\monitor_station\drivers):                            if( alarm_state == 1)        //一态断电
+Mcp2510.c (f:\code\main\zigbee\stm32\stm32f20x\monitor_station\drivers):							else if( alarm_state == 2)  
+Mcp2510.c (f:\code\main\zigbee\stm32\stm32f20x\monitor_station\drivers):                        if( (char)ConverToByeFloat(&rxbuf0[2]) == alarm_state )    //一态断电
+Mcp2510.c (f:\code\main\zigbee\stm32\stm32f20x\monitor_station\drivers):                            if( alarm_state == 1)  
+Mcp2510.c (f:\code\main\zigbee\stm32\stm32f20x\monitor_station\drivers):							else if( alarm_state == 2)  

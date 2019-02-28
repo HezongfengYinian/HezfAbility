@@ -1,0 +1,9 @@
+---- spi_tx_cnt 匹配 (8 in 2 文件) ----
+Platform.c (f:\code--test\main\zigbee\stm32\stm32f20x\radio test uwb_station\drivers):unsigned int spi_tx_cnt = 0;
+Platform.c (f:\code--test\main\zigbee\stm32\stm32f20x\radio test uwb_station\drivers):    spi_tx_cnt++;
+Platform.c (f:\code--test\main\zigbee\stm32\stm32f20x\radio test uwb_station\drivers):	if(spi_tx_cnt%2)
+Platform.c (f:\code--test\main\zigbee\stm32\stm32f20x\radio test uwb_station\drivers):		rt_kprintf("rxcnt:%d,txcnt:%d\n",spi_rx_cnt,spi_tx_cnt);
+复件 (2) platform.c (f:\code--test\main\zigbee\stm32\stm32f20x\radio test uwb_station\drivers):unsigned int spi_tx_cnt = 0;
+复件 (2) platform.c (f:\code--test\main\zigbee\stm32\stm32f20x\radio test uwb_station\drivers):    spi_tx_cnt++;
+复件 (2) platform.c (f:\code--test\main\zigbee\stm32\stm32f20x\radio test uwb_station\drivers):	if(spi_tx_cnt%2)
+复件 (2) platform.c (f:\code--test\main\zigbee\stm32\stm32f20x\radio test uwb_station\drivers):		rt_kprintf("rxcnt:%d,txcnt:%d\n",spi_rx_cnt,spi_tx_cnt);

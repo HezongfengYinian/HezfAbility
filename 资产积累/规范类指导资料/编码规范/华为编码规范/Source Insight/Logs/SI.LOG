@@ -1,0 +1,19 @@
+--------------------------------------------
+07/06/18 21:07:52: Source Insight Starting - Version 3.50.0076  Built on Thu 02/19/2015
+07/06/18 21:07:52: process ID 2180
+07/06/18 21:07:52: Temp file folder: C:\Users\ADMINI~1\AppData\Local\Temp\
+07/06/18 21:07:52: Init: workspace
+07/06/18 21:07:52: Init: configuration
+07/06/18 21:07:52: Init: project db
+07/06/18 21:07:52: installing custom languages
+07/06/18 21:07:52: Init: cmd line
+07/06/18 21:07:52: Init: base project
+07/06/18 21:07:52: Project Sync: checking for file changes...
+07/06/18 21:07:52: Project Sync: reparsing files...
+07/06/18 21:07:52: Project: 0 symbols, 0 index entries, 1 files
+07/06/18 21:07:52: Project: 15 symbols, 52 index entries, 1 files
+07/06/18 21:07:52: Init: load clips
+07/06/18 21:07:54: Init: setup
+07/06/18 21:08:19: ERROR! Init: complete setup
+07/06/18 21:08:19: Source Insight Shutting Down - Version 3.50.0076  Built on Thu 02/19/2015
+07/06/18 21:08:19: process ID 2180

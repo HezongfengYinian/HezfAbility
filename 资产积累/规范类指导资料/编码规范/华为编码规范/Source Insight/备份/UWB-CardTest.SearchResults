@@ -1,0 +1,5 @@
+---- RCC_RTCCLKSource_LSE Æ¥Åä (4 in 3 ÎÄ¼þ) ----
+Stm32f2xx_rcc.c (f:\code--test\main\zigbee\stm32\stm32f20x\stm32f2xx_libraries\stm32f2xx_stdperiph_driver\src):  *            @arg RCC_RTCCLKSource_LSE: LSE selected as RTC clock
+Stm32f2xx_rcc.h (f:\code--test\main\zigbee\stm32\stm32f20x\stm32f2xx_libraries\stm32f2xx_stdperiph_driver\inc):#define RCC_RTCCLKSource_LSE             ((uint32_t)0x00000100)
+Stm32f2xx_rcc.h (f:\code--test\main\zigbee\stm32\stm32f20x\stm32f2xx_libraries\stm32f2xx_stdperiph_driver\inc):#define IS_RCC_RTCCLK_SOURCE(SOURCE) (((SOURCE) == RCC_RTCCLKSource_LSE) || \
+Stm32f2_rtc.c (f:\code--test\main\zigbee\stm32\stm32f20x\uwb-cardtest\drivers):    RCC_RTCCLKConfig(RCC_RTCCLKSource_LSE);

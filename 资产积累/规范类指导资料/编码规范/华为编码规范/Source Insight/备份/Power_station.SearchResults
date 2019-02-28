@@ -1,0 +1,78 @@
+---- ping Æ¥Åä (77 in 18 ÎÄ¼þ) ----
+A00153.html (f:\code\main\zigbee\stm32\rt-thread\components\net\uip\doc\html):uIP uses a "ping" packets for setting its own IP address if this option is set. If so, uIP will start with an empty IP address and the destination IP address of the first incoming "ping" (ICMP echo) packet will be used for setting the hosts IP address.<p>
+A00201.html (f:\code\main\zigbee\stm32\rt-thread\components\net\uip\doc\html):<a name="l00893"></a>00893     <span class="comment">/* If we are configured to use ping IP address configuration and</span>
+A00201.html (f:\code\main\zigbee\stm32\rt-thread\components\net\uip\doc\html):<a name="l00898"></a>00898       <a class="code" href="a00150.html#g013c3a06a8b58589a77f4a3442f89c2a">UIP_LOG</a>(<span class="stringliteral">"ip: possible ping config packet received."</span>);
+A00201.html (f:\code\main\zigbee\stm32\rt-thread\components\net\uip\doc\html):<a name="l00976"></a>00976   <span class="comment">/* ICMP echo (i.e., ping) processing. This is simple, we only change</span>
+A00201.html (f:\code\main\zigbee\stm32\rt-thread\components\net\uip\doc\html):<a name="l00986"></a>00986   <span class="comment">/* If we are configured to use ping IP address assignment, we use</span>
+A00201.html (f:\code\main\zigbee\stm32\rt-thread\components\net\uip\doc\html):<a name="l00987"></a>00987 <span class="comment">     the destination IP address of this ping packet and assign it to</span>
+A00201.html (f:\code\main\zigbee\stm32\rt-thread\components\net\uip\doc\html):<a name="l01056"></a>01056     <span class="comment">/* ICMP echo (i.e., ping) processing. This is simple, we only</span>
+A00206.html (f:\code\main\zigbee\stm32\rt-thread\components\net\uip\doc\html):<a name="l00102"></a>00102 <span class="comment"> * uIP uses a "ping" packets for setting its own IP address if this</span>
+A00206.html (f:\code\main\zigbee\stm32\rt-thread\components\net\uip\doc\html):<a name="l00104"></a>00104 <span class="comment"> * the destination IP address of the first incoming "ping" (ICMP echo)</span>
+Icmp.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip-1.3.2\src\core\ipv4):    LWIP_DEBUGF(ICMP_DEBUG, ("icmp_input: ping\n"));
+Icmp.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip\src\core\ipv4):    LWIP_DEBUGF(ICMP_DEBUG, ("icmp_input: ping\n"));
+Icmp6.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip-1.3.2\src\core\ipv6):    LWIP_DEBUGF(ICMP_DEBUG, ("icmp_input: ping\n"));
+Icmp6.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip\src\core\ipv6):    LWIP_DEBUGF(ICMP_DEBUG, ("icmp_input: ping\n"));
+Inet_chksum.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip-1.3.2\src\core\ipv4):    tmp = sum + *pl++;          /* ping */
+Inet_chksum.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip\src\core\ipv4):    tmp = sum + *pl++;          /* ping */
+Main.html (f:\code\main\zigbee\stm32\rt-thread\components\net\uip\doc\html):The ICMP protocol is used for reporting soft error conditions and for querying host parameters. Its main use is, however, the echo mechanism which is used by the "ping" program.<p>
+Net_app.c (f:\code\main\zigbee\stm32\stm32f20x\power_station\applications):        rt_kprintf( "save ping addr ok\n");
+Net_app.c (f:\code\main\zigbee\stm32\stm32f20x\power_station\applications):	rt_kprintf("send  ping and ad  id= %d ,tag =%d \n",sys_option.u32BsId,tag);
+Net_app.c (f:\code\main\zigbee\stm32\stm32f20x\power_station\applications):	pkt_hdr.tag = tag;     //ad :5555    ping:5556
+Net_app.c (f:\code\main\zigbee\stm32\stm32f20x\power_station\applications):rt_err_t ping(char* target, rt_uint32_t time, rt_size_t size);
+Net_app.c (f:\code\main\zigbee\stm32\stm32f20x\power_station\applications):		rt_kprintf("entry ping\n");	
+Net_app.c (f:\code\main\zigbee\stm32\stm32f20x\power_station\applications):				pingerr = ping(ip_addr,120,1);
+Net_app.c (f:\code\main\zigbee\stm32\stm32f20x\power_station\applications):			rt_kprintf("--------------send ping poll count=%d \n",rev_ip_ping_count);
+Net_app.c (f:\code\main\zigbee\stm32\stm32f20x\power_station\applications):	rt_kprintf("entry net ping\n");	
+Net_app.c (f:\code\main\zigbee\stm32\stm32f20x\power_station\applications):    //net_ping_thread = rt_thread_create("net ping thread",
+Net_app.c (f:\code\main\zigbee\stm32\stm32f20x\power_station\applications):        //ERROR_LOG("create net ping thread failed\n");
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip-1.3.2\apps): * netutils: ping implementation
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip-1.3.2\apps):/** ping receive timeout - in milliseconds */
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip-1.3.2\apps):/** ping delay - in milliseconds */
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip-1.3.2\apps):/** ping identifier - must fit on a u16_t */
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip-1.3.2\apps):/** ping additional data size to include in the packet */
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip-1.3.2\apps):/* ping variables */
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip-1.3.2\apps):			rt_kprintf("ping: recv %d.%d.%d.%d\n", addr->addr0, addr->addr1, addr->addr2, addr->addr3);
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip-1.3.2\apps):				rt_kprintf("ping: drop\n");
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip-1.3.2\apps):		rt_kprintf("ping: timeout\n");
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip-1.3.2\apps):rt_err_t ping(char* target, rt_uint32_t time, rt_size_t size)
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip-1.3.2\apps):			rt_kprintf("ping: send %d.%d.%d.%d\n", addr->addr0, addr->addr1, addr->addr2, addr->addr3);
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip-1.3.2\apps):			rt_kprintf("ping: send %d.%d.%d.%d - error\n", addr->addr0, addr->addr1, addr->addr2, addr->addr3);
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip-1.3.2\apps):		if (send_time >= time) break; /* send ping times reached, stop */
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip-1.3.2\apps):FINSH_FUNCTION_EXPORT(ping, ping network host);
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip\apps): * netutils: ping implementation
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip\apps):/** ping receive timeout - in milliseconds */
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip\apps):/** ping delay - in milliseconds */
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip\apps):/** ping identifier - must fit on a u16_t */
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip\apps):/** ping additional data size to include in the packet */
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip\apps):/* ping variables */
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip\apps):			rt_kprintf("ping: recv %d.%d.%d.%d\n", addr->addr0, addr->addr1, addr->addr2, addr->addr3);
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip\apps):				rt_kprintf("ping: drop\n");
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip\apps):		rt_kprintf("ping: timeout\n");
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip\apps):rt_err_t ping(char* target, rt_uint32_t time, rt_size_t size)
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip\apps):			rt_kprintf("ping: send %d.%d.%d.%d\n", addr->addr0, addr->addr1, addr->addr2, addr->addr3);
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip\apps):			rt_kprintf("ping: send %d.%d.%d.%d - error\n", addr->addr0, addr->addr1, addr->addr2, addr->addr3);
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip\apps):		if (send_time >= time) break; /* send ping times reached, stop */
+Ping.c (f:\code\main\zigbee\stm32\rt-thread\components\net\lwip\apps):FINSH_FUNCTION_EXPORT(ping, ping network host);
+Rtthread-stm32.htm (f:\code\main\zigbee\stm32\stm32f20x\power_station\obj):<LI><a href="#[1c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ping
+Rtthread-stm32.htm (f:\code\main\zigbee\stm32\stm32f20x\power_station\obj):<LI><a href="#[1c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ping
+Rtthread-stm32.htm (f:\code\main\zigbee\stm32\stm32f20x\power_station\obj):<BR>[Called By]<UL><LI><a href="#[1c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ping
+Rtthread-stm32.htm (f:\code\main\zigbee\stm32\stm32f20x\power_station\obj):<BR>[Called By]<UL><LI><a href="#[1c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ping
+Rtthread-stm32.htm (f:\code\main\zigbee\stm32\stm32f20x\power_station\obj):<BR>[Called By]<UL><LI><a href="#[1c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ping
+Rtthread-stm32.htm (f:\code\main\zigbee\stm32\stm32f20x\power_station\obj):<BR>[Called By]<UL><LI><a href="#[1c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ping
+Rtthread-stm32.htm (f:\code\main\zigbee\stm32\stm32f20x\power_station\obj):<P><STRONG><a name="[1c8]"></a>ping</STRONG> (Thumb, 180 bytes, Stack size 0 bytes, ping.o(.text))
+Rtthread-stm32.htm (f:\code\main\zigbee\stm32\stm32f20x\power_station\obj):<BR><BR>[Calls]<UL><LI><a href="#[1c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ping
+Rtthread-stm32.htm (f:\code\main\zigbee\stm32\stm32f20x\power_station\obj):<P><STRONG><a name="[552]"></a>ping_prepare_echo</STRONG> (Thumb, 78 bytes, Stack size 0 bytes, ping.o(.text))
+Rtthread-stm32.htm (f:\code\main\zigbee\stm32\stm32f20x\power_station\obj):<P><STRONG><a name="[553]"></a>ping_send</STRONG> (Thumb, 124 bytes, Stack size 0 bytes, ping.o(.text))
+Rtthread-stm32.htm (f:\code\main\zigbee\stm32\stm32f20x\power_station\obj):<BR>[Called By]<UL><LI><a href="#[1c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ping
+Rtthread-stm32.htm (f:\code\main\zigbee\stm32\stm32f20x\power_station\obj):<P><STRONG><a name="[554]"></a>ping_recv</STRONG> (Thumb, 136 bytes, Stack size 0 bytes, ping.o(.text))
+Rtthread-stm32.htm (f:\code\main\zigbee\stm32\stm32f20x\power_station\obj):<BR>[Called By]<UL><LI><a href="#[1c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ping
+Uip-doc.txt (f:\code\main\zigbee\stm32\rt-thread\components\net\uip\doc):which is used by the "ping" program.
+Uip-fw.c (f:\code\main\zigbee\stm32\rt-thread\components\net\uip\uip):  /* If we use ping IP address configuration, and our IP address is
+Uip.c (f:\code\main\zigbee\stm32\rt-thread\components\net\uip\uip):    /* If we are configured to use ping IP address configuration and
+Uip.c (f:\code\main\zigbee\stm32\rt-thread\components\net\uip\uip):      UIP_LOG("ip: possible ping config packet received.");
+Uip.c (f:\code\main\zigbee\stm32\rt-thread\components\net\uip\uip):  /* ICMP echo (i.e., ping) processing. This is simple, we only change
+Uip.c (f:\code\main\zigbee\stm32\rt-thread\components\net\uip\uip):  /* If we are configured to use ping IP address assignment, we use
+Uip.c (f:\code\main\zigbee\stm32\rt-thread\components\net\uip\uip):     the destination IP address of this ping packet and assign it to
+Uip.c (f:\code\main\zigbee\stm32\rt-thread\components\net\uip\uip):    /* ICMP echo (i.e., ping) processing. This is simple, we only
+Uipopt.h (f:\code\main\zigbee\stm32\rt-thread\components\net\uip\uip): * uIP uses a "ping" packets for setting its own IP address if this
+Uipopt.h (f:\code\main\zigbee\stm32\rt-thread\components\net\uip\uip): * the destination IP address of the first incoming "ping" (ICMP echo)

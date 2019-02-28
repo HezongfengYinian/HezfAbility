@@ -1,0 +1,8 @@
+---- flash_read Æ¥Åä (7 in 5 ÎÄ¼þ) ----
+Bootcfg.c (f:\code--test\main\zigbee\stm32\stm32f20x\monitor_station\applications):    status = flash_read(OPTION_FLASH_ADDR, (u8*)(&sys_option), sizeof(CFG_OPTION_T));
+Mcp2510.c (f:\code--test\main\zigbee\stm32\stm32f20x\monitor_station\drivers):		if( flash_read(OPTION_FLASH_ADDR, (u8*)data_flash, sizeof(data_flash)))
+Rtthread-stm32.htm (f:\code--test\main\zigbee\stm32\stm32f20x\monitor_station\obj):<BR><BR>[Calls]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_read
+Rtthread-stm32.htm (f:\code--test\main\zigbee\stm32\stm32f20x\monitor_station\obj):<P><STRONG><a name="[138]"></a>flash_read</STRONG> (Thumb, 66 bytes, Stack size 0 bytes, stm32_flash.o(.text))
+Rtthread-stm32.htm (f:\code--test\main\zigbee\stm32\stm32f20x\monitor_station\obj):<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_read
+Stm32_flash.c (f:\code--test\main\zigbee\stm32\stm32f20x\monitor_station\drivers):rt_bool_t flash_read(u32 address, u8* buffer, u16 size)
+Stm32_flash.h (f:\code--test\main\zigbee\stm32\stm32f20x\monitor_station\drivers):rt_bool_t flash_read(u32 address, u8* buffer, u16 size);
