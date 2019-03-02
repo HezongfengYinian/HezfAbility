@@ -1,0 +1,66 @@
+
+
+2卷第20期 
+年10月中国科技论文 CHINA SCIENCEPAPERVol. 1 2 No. 20 Oct. 2017
+于卡尔曼滤波的室内移动目标定位算法
+士凯，高学，左鹏，窦刚
+山东青岛
+)
+要:针对室内定位算法受环境噪声影响严重，导致定位误差大的问题
+首先在室内移动目标定位算法中引入卡尔曼滤波算 
+能有效抑制定位过程中因数据采集误差引发的定位误差发散；然后通过
+
+or)算法估算待测目标的坐标；最后利用方位传感器对直线运动过程的定位点进行修正。通过3个阶段的优化可提高定位精 
+，仿真实验结果表明，基于卡尔曼滤波的室内移动目标定位算法的平均测量误差为
+648 7 m,误差范围是0. 1?1. 9 m,对于 
+
+无线传感网络；室内定位
+移动目标；卡尔曼滤波；方位角传感器
+
+文献标志码：A 文章编号= 2095-2783(2017)20-2301 - 04
+
+ANGSiikai, GAOXue, ZUOPeng, DOUGang
+f Electrical Engineering 
+八utomation , Shandong University of Science and 
+Qingdao, Shandong 266590 , China)
+
+
+Indoor positioning algorithm it teriously affected by the environmental noise, le
+filter algorithm it introduced into the mobile target indoor positioning algorithm to tupprest the divergence of the positioning 
+Then, the kNN (k-Nearest Neighbor) algorithm s applied to estimate the positioni
+s used to correct the locating point of the linear motion process. The positioning accuracy could be improved through these 
+The emulation results show that the average positioning error of the mobi
+is only 0. 648 7 m, the error range is 0. 1-1. 9 m, and the path dete
+
+
+： wireless sensor network； indoor localization； mobile target； Kalman filter ；the azimuth sensor
+
+，诸如无线蜂窝定位系统
+GPS和北斗导航定位 
+由于室内定位系统在 
+救援、监狱、矿区等许多领域都有着广泛 
+且随着移动设备和无线局域网的普 
+，室内定位系统也就越来越受到人们的关注
+ ]。 
+而，墙壁对电磁波的削弱以及定位精度的不足， 
+
+
+，因此，针对室内环境的定位系统得 
+目前，主要的室内定位系统有超声 
+超宽带定位系统、红外线定位系统以 
+无线射频识别（
+ frequency identification， 
+FID)定位系统等。由于无线射频识别定位系统无 
+体系小、信息容量大、携带方便、穿透力强、 
+耐久性强等特点，而得到迅速发展及 
+
+
+ of 
+rrival,AOA)的定位[4]、基于到达时间（time of arri-
+l, TOA) 的定位[5]、 基于到达 时间差 （ time differ-ence of arrival ,TDOA) 的定位[6] 、基于接收信号强度 指示(received signal strength indication,RSSI)的定 位[7]等多种定位方式。由于基于RSSI的定位价格 低廉、精度较高、测距简单，因此获得了广泛应 用[]。室内定位算法则（location identification based on dynamic active RFID calibration, LANDMARC)是 1种典型的基于RSSI室内定位算法[]，具有较高的 定位精度（2. 5 m以内、概率90 % )，且可扩展性好， 能处理比较复杂的环境，是1种实用的定位方 法[10]。但是，该算法也有其一定的不足，例如由于 室内复杂的环境会使RFID信号经散射、衍射后形 成干扰信号，这些信号并不是简单的叠加，而是每 个点电势的累加，结果是不可预知的，即会产生多 径效应，再加上RSSI测量过程中会产生噪声，从而 导致 内 的 性性。以往的室内定位算法大多是针对位置固定的目 标进行的，多采用多次测量求取平均值的方法测量 
+因此对滤波的要求不高。本文算法针对移动
+2017-04-11
+国家自然科学基金资助项目（61473177)高等学校博士学科点专项科研基金资助项目（2013371812009, 20133718110011)中国博士 
+M582114)
+唐士凯（992 —），男，硕士研究生，主要研究方向为智能控制理论 
+窦刚，讲师，主要研究方向为控制理论与控制工程，dougang521@163.com

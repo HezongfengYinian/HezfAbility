@@ -1,0 +1,733 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TDOA定位的Chan算法MATLAB源代码 - 道客巴巴</title>
+<meta property="og:type" content="document"/>
+<meta property="og:url" content="http://www.doc88.com/p-7905821095236.html" />
+<meta property="og:release_date" content="2015-04-10"/>
+<meta property="og:title" content="TDOA定位的Chan算法MATLAB源代码"/>
+<meta property="og:description" content=""/>
+<meta property="og:document:type" content="PDF"/>
+<meta property="og:image" content="http://png.doc88.com/2013/06/28/8425978098687_160.png"/>
+<meta property="og:document:page" content="3"/>
+<meta property="og:document:cost" content="400积分"/>
+  
+<meta name="keywords" content="算法,代码,定位,CHAN 算法,TDOA,实现定位,matlab,chan算法,定位的,chan" />
+<meta name="description" content="" />
+<meta name="author" content="道客巴巴" />
+<meta name="Robots" content= "all" />
+<meta name="Copyright" content="道客巴巴 doc88.com 版权所有" />
+
+<link rel="stylesheet" type="text/css" href="http://static.doc88.com/assets/css/reset.css?v=2.1"/>
+<link rel="stylesheet" type="text/css" href="http://static.doc88.com/assets/css/layout.css?v=2.52"/>
+<link rel="stylesheet" type="text/css" href="http://static.doc88.com/assets/css/form.css?v=2.21"/>
+<link rel="stylesheet" type="text/css" href="http://static.doc88.com/assets/css/read.css?v=2.629"/>
+<link rel="stylesheet" type="text/css" href="http://static.doc88.com/assets/css/addcss.css?v=1.2"/>
+<link rel="stylesheet" type="text/css" href="http://static.doc88.com/assets/css/window.css?v=1.22"/>
+<link rel="stylesheet" type="text/css" href="http://static.doc88.com/resources/Iconfont/iconfont.css?v=1.1"/>
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="http://static.doc88.com/assets/css/forie.css?v=2.2"/>
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+body{_background-attachment:fixed;}
+#readshop {
+_top: expression(offsetParent.scrollTop<=50 ? 0:(offsetParent.scrollTop-50));
+}
+</style>
+<![endif]-->
+	
+	<script language="JavaScript" type="text/javascript" src="http://static.doc88.com/assets/js/jquery-1.8.1.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="http://static.doc88.com/assets/js/jquery.form.js"></script>
+<script language="Javascript" type="text/javascript" src="http://static.doc88.com/assets/js/jquery.jsonp.js"></script>
+<script language="JavaScript" type="text/javascript" src="http://static.doc88.com/assets/js/swfobject.js?v=1.0"></script>
+<!--[if lte IE 6]>
+<script language="JavaScript" type="text/javascript" src="http://static.doc88.com/assets/js/color/js/colorpicker.js"></script>
+<![endif]-->
+<script language="JavaScript">
+var global_page = "reading";   
+var siteurl_static = "http://static.doc88.com";  
+var site_url = "http://www.doc88.com";
+</script>
+<script language="JavaScript" type="text/javascript" src="http://static.doc88.com/assets/js/v2.js?v=19.769"></script>
+<script language="JavaScript" type="text/javascript" src="http://static.doc88.com/assets/js/read.js?v=2.9283"></script>
+<script language="JavaScript" type="text/javascript" src="http://static.doc88.com/assets/js/json.js?v=2.32"></script>
+<script language="JavaScript" type="text/javascript" src="http://static.doc88.com/assets/js/commonjs.js?v=2.4248"></script>
+<script>     
+	var h5Model = ""; 
+
+	checkH5();
+	initWidth();
+    var root_path = "";
+    var product_id = "685013879";
+    var dkid = "CIpUELfYzQFQFS5kDW0!2K5jDWUYEKUQ2qPV2L3R0LkV0j0WzmhUDuXmEWlkwqsVHj1l0Wtj0qHT0LMQ1qvQBuxj1jvU0qBl0u0X1mti";
+    var member_id = "11810946"
+	var nick_name = "一年级资料..";
+    var product_code = "7905821095236";
+    var product_shortname = "TDOA定位的Chan算法MATLAB源代码";
+    var product_pagecount = "3";
+    var doctype = "";
+    var priceFree = "1";
+    var stateBought = "0";
+    var freeDLoadable = "2";
+    var freeDLprice = "4.00";
+    var freePrintable = "";
+    var freePrintprice = "";
+    var readPrice = "0.00";   
+    var checkdl = "";
+    var viewNum = "442";
+    var msgNum = "1";
+	var abbmcss= "0pUV1qse1KvXzqv!1KvSzqvS2Kvc0pUV1qse1KvXzqsS0qnWzqM!2S0c0pUV1qse1KvXzqsV0KHRzq3T2kDW0R==";
+    var mydoc = "";   
+    var logined = "0";
+    var ownPublish = "0";
+    var timeLimit = "0";
+    var statePagekey = "0";
+    var downloadable = "1";
+    var dlremainTimes = "0";
+    var downloadPrice = "4.00";
+    var v_downloadPrice = "";
+    var printPrice = "未提供打印";
+    var dlcode = "";
+    var stateOrderChecking = "0";
+    var doccheckstate = "1";
+    var ajaxotherdoc = "";  
+    var ajaxrelated = "";
+    var docpricetype = "下载提示：此文档(PDF格式,共3页)需要积分下载，下载积分为400。";
+	var docprinttype = "";
+    var buydlstr = "下载";
+    var balance = "0.00";
+    var deposit = "1";
+    var docprice = "4.00";
+    var v_docprice = "";
+    var curDownloadTimes = "0";
+	var curPrintTimes = "0";
+	var statePrintSpcode = "";
+	var buyerMoney = 0;
+	var current_memeber_id = "";
+    var curDecrypt = "";
+    var checkcode = "1543221377338514";    
+	var no_bizincome = 0;
+		var mtp = 3;
+	var mhs  = 48843;
+	var mhi = new Array("48843"); 
+	var mhpi = new Array("3");
+	var mhls = new Array("0"); 
+	var mh5hls = new Array("0");
+	var mfvs =  new Array("0");	
+	var mpebt = "35-20130628-20130628135620_nRGo0hN3";
+	var mhost = "http://ebt196.doc88.com";     
+    var mimgH = "http://mu71.doc88.com";
+	var mpnghost = "http://png.doc88.com/2013/06/28/8425978098687";
+	var mpngh = 226;
+	var mformat = "PDF";
+	var madif = "1";
+	var publish = "1";
+	var msp = "0";
+	var ajaxld = "1";
+	var srl = "1";
+	var srlid = "480aFD3joaCb4zimfwIaitAXhBK4xFa8QcR1UxTuOiN9E7WpkFFeBSmiVOMIiYR8ECRnd4gB/ctZSLhxkxKn";
+	var p_s = "0";
+	var conif = "1";
+	var showif = "0";
+	var ssl = 0;     
+	var mpr = false;
+	var mpp = 5;     
+	var mloginname =  'xiaoxyinianji';
+	var mudate = '2015-04-10';
+	var deviationTime = 1543221377338-new Date().getTime(); 
+	var uuid = "55b3e3ec163017547ebc64416e1c06eb";  
+	var sid = "1ks104b0pcfmqlmmsoag0hqd31"; 
+	var puuid = "6eddf780019d2d17ec81f10874f16c6d"; 
+	var group_id = "8608897,8781546,10248266";  
+	var book_id = ""; 
+	var r_p_ids = ""; 
+	var u_v = 0;
+	var v_d_if = 0; 
+	//稻壳联盟
+	var refercode = '';
+	var getcode = '';
+    var if_zip = '';
+</script>
+	      
+</head>
+
+<body>
+
+<div class="vip-copy-tips">
+    复制成功
+</div>
+<iframe id="startIFrame" name="startIFrame" style='display:none'></iframe>
+<!-- 新手引导 -->
+<div class="users-guide" style="display: none">
+    <div id="guide-img">
+        <img src="http://static.doc88.com/assets/images/reading/guide.png" alt="" />
+        <a href="javascript:;" class="guide-btn">我知道了</a>
+    </div>
+</div>
+<div id="m_logDiv" class="logPanel" style="display:none"></div>
+ <div class="topshop">
+  <div class="mainpart">
+    <div class="tabs2">
+      <ul class="tab">
+        <li id="skins1" onclick="setTab('skins',1,2)" class="current">图案背景</li>
+        <li id="skins2" onclick="setTab('skins',2,2)">纯色背景</li>
+      </ul>
+      <div class="tabcont">
+	    <div id="skin_panel_1" class="skin-panel">
+        <div id="con_skins_1">
+          <ul class="skin-list" id="skin-list-img">
+          </ul>
+        </div>
+		</div>
+		<div id="skin_panel_2" class="skin-panel">
+        <div id="con_skins_2" class="hide">
+          <ul class="skin-list"  id="skin-list-color">
+          </ul>
+		</div>
+        </div>
+		<div class="skinpaging">
+            <a href="javascript:void(0)" class="prevskin"></a>
+            <a href="javascript:void(0)" class="nextskin"></a>
+          </div>
+      </div>
+      <!--end tabcont-->
+    </div>
+    <!--end tab2-->
+  </div>
+  <!--end mainpart-->
+</div>
+<!--end topshop-->
+<div class="header" id="header">
+  <div class="mainpart">
+<div class="logo">
+		<a href="http://www.doc88.com/">
+		 <img src="http://static.doc88.com/assets/images/doc88.png" style="display:none"/>
+            <img src="http://static.doc88.com/assets/images/logo1.png" class="logoimg"/>
+            <!--[if IE 6]>
+            <img src="assets/images/logo1.gif"/>
+            <![endif]-->
+            </a>
+        </div>
+
+        <div class="mainnav">
+            <ul class="nav">
+                <li><a href="/">首页</a></li>
+                <li class="dropdown">
+                    <a href="/list.html">文档</a>
+                    <div class="dorpmenu2 hide">
+                        <ul class="categorys">
+            <li><a class="subnav" href="http://www.doc88.com/list-593-0.html" target="_blank" title="行业资料">行业资料</a></li>
+            <li><a class="subnav" href="http://www.doc88.com/list-442-0.html" target="_blank" title="考试资料">考试资料</a></li>
+            <li><a class="subnav" href="http://www.doc88.com/list-441-0.html" target="_blank" title="教学课件">教学课件</a></li>
+            <li><a class="subnav" href="http://www.doc88.com/list-440-0.html" target="_blank" title="学术论文">学术论文</a></li>
+            <li><a class="subnav" href="http://www.doc88.com/list-443-0.html" target="_blank" title="技术资料">技术资料</a></li>
+            <li><a class="subnav" href="http://www.doc88.com/list-444-0.html" target="_blank" title="金融财经">金融财经</a></li>
+            <li><a class="subnav" href="http://www.doc88.com/list-445-0.html" target="_blank" title="研究报告">研究报告</a></li>
+            <li><a class="subnav" href="http://www.doc88.com/list-446-0.html" target="_blank" title="法律文献">法律文献</a></li>
+            <li><a class="subnav" href="http://www.doc88.com/list-447-0.html" target="_blank" title="管理文献">管理文献</a></li>
+            <li><a class="subnav" href="http://www.doc88.com/list-448-0.html" target="_blank" title="社会科学">社会科学</a></li>
+            <li><a class="subnav" href="http://www.doc88.com/list-449-0.html" target="_blank" title="生活休闲">生活休闲</a></li>
+            <li><a class="subnav" href="http://www.doc88.com/list-574-0.html" target="_blank" title="计算机">计算机</a></li>
+            <li><a class="subnav" href="http://www.doc88.com/list-687-0.html" target="_blank" title="经济文库">经济文库</a></li>
+            <li><a class="subnav" href="http://www.doc88.com/list-720-0.html" target="_blank" title="数字媒体">数字媒体</a></li>
+            <li><a class="subnav" href="http://www.doc88.com/list-702-0.html" target="_blank" title="教材教辅">教材教辅</a></li>
+            <li><a class="subnav" href="http://www.doc88.com/list-730-0.html" target="_blank" title="企业档案">企业档案</a></li>
+            <li><a class="subnav" href="http://www.doc88.com/list-450-0.html" target="_blank" title="网络文学">网络文学</a></li>
+                        </ul>
+                        <sup class="arr"></sup>
+                    </div>
+                </li>
+                <!--li class="dropdown">
+                    <a href="#">频道</a>
+                    <div class="dorpmenu2 hide">
+                        <ul class="subnavul">
+                            <li><a class="subnav" href="#">论文</a></li>
+                            <li><a class="subnav" href="#">作文</a></li>
+                            <li><a class="subnav" href="#">工作总结</a></li>
+                            <li><a class="subnav" href="#">医疗</a></li>
+                            <li><a class="subnav" href="#">股票</a></li>
+                        </ul>
+                        <sup class="arr"></sup>
+                    </div>
+                </li-->
+                <!--li class="dropdown">
+                    <a href="#" >认证</a>
+                    <div class="dorpmenu2 hide">
+                        <ul class="subnavul">
+                            <li><a class="subnav" href="http://www.doc88.com/geren.php"><i class="iconfont">&#xe660;</i>个人认证</a></li>
+                            <li><a class="subnav" href="http://www.doc88.com/jigou.php"><i class="iconfont">&#xe664;</i>机构合作</a></li>
+                        </ul>
+                        <sup class="arr"></sup>
+                    </div>
+                </li-->
+				<li><a href="/t-list.html">任务</a></li>
+                <li><a href="/b-list.html">文辑</a></li>
+                <li><a href="/circle-topic.html">道客圈</a></li>
+                
+				<!--li><a href="#">组</a></li-->
+
+            </ul>
+        </div>
+        <!--end mainnav-->
+
+		      <div class="usershop">
+		<ul>
+		 <li  id="loginBar"> <script language="javascript">getLoginBar("loginBar",0);</script></li>
+		<li class="shop1">
+                    <form class="bigsearch" id="searchForm" method="post" onsubmit="return search_submit();" target="_blank" >
+                        <input type="text" placeholder=" 在道客巴巴数亿文档库中搜索..." class="stext" onfocus="this.placeholder=''" onblur="if(this.value=='')this.placeholder=' 在道客巴巴数亿文档库中搜索...';" class="stext" id="keyword" />
+                      	                      		<input type="submit" class="sbtncss" value=""/>
+                      	                    </form>
+                </li>
+  <li class="shop1">
+                    <button type="button" style="display: block;"  class="btnupload1" onclick="showLoginWindow('/uc/index.php?act=upload','上传文档','登录后，可将您的文档上传至道客巴巴');"><i class="iconfont">&#xe621;</i> 上传我的文档</button>
+                    <button type="button"  style="display: none;" title="上传我的文档" class="btnupload2" onclick="showLoginWindow('/uc/index.php?act=upload','上传文档','登录后，可将您的文档上传至道客巴巴');"><i class="iconfont">&#xe621;</i></button>
+  					<button type="button" style="display: block;" class="btnupload3" onclick="showLoginWindow('/uc/index.php?act=upload','上传文档','登录后，可将您的文档上传至道客巴巴');"><i class="iconfont">&#xe621;</i> 上传文档</button>
+			    </li>
+
+ </ul>
+     
+    </div>
+	    <!--end shop-->
+  </div>
+  <!--end mainpart-->
+  <div class="skin-peeler">
+    <a href="javascript:void(0)">
+      <img src="http://static.doc88.com/assets/images/icons/skin-peeler.png" class="ie6png" />
+      <!--[if IE 6]>
+      <img src="http://static.doc88.com/assets/images/icons/skin-peeler-ie6.png" />
+      <![endif]-->
+    </a>
+  </div>
+  <!--end skin-peeler -->
+  <div class="skintips">
+    <img src="http://static.doc88.com/assets/images/tips/skintips.png" class="ie6png" />
+    <!--[if IE 6]>
+    <img src="http://static.doc88.com/assets/images/tips/skintips-for-ie6.png" />
+    <![endif]-->
+    <a href="javascript:void(0)" title="关闭" class="close"></a>
+    <a href="javascript:void(0)" title="试试" class="into "></a>
+  </div>
+  <!--end skintips-->
+</div>
+<!--end header-->
+<script src="http://static.doc88.com/resources/js/growth_value.js" type="text/javascript" charset="utf-8"></script>
+<div class="readshop"  id="readshop">
+    <div class="mainpart" style="min-width:720px;">
+        <ul class="shop1">
+            <li class="nobg"><button class="btndown1" id="btndown1"><i class="iconfont">&#xe602;</i> 下载</button></li>
+            <li ><button class="btnlike1" onclick="downloaddkclient(2);"><i class="iconfont">&#xe752;</i> 打印</button></li>
+            <li><button class="btnlike1" id="collect_btn"><i class="iconfont">&#xe60c;</i> 收藏</button></li>
+            <li><button class="btnlike1" id="corpus_btn" onclick="add_corpus()">加入文辑</button></li>
+        </ul>
+        <ul class="shop2">
+            <li ><a href="javascript:;" title="放大" id="zoomInButton"><i class="iconfont">&#xe624;</i></a></li>
+            <li class="disable"><a href="javascript:;" title="缩小" id="zoomOutButton"><i class="iconfont">&#xe625;</i></a></li>
+            <li><a href="javascript:;" title="全屏" id="frscreen"><i class="iconfont">&#xe615;</i></a></li>
+            <li style="display:none"><a href="javascript:;" title="恢复窗口" id="quitFrscreen"><i class="iconfont">&#xe616;</i></a></li>
+			
+            <li style="display:none"><a href="javascript:;" title="缩略图" id="thumbModelButton"><i class="iconfont">&#xe802;</i></a></li>   
+			<li style="display:none"><a href="javascript:;" title="阅读模式" id="listModelButton"><i class="iconfont">&#xe803;</i></a></li>
+        </ul>
+        <ul class="shop3">
+            <li class="disable"><a href="javascript:;" title="上一页" id="prePageButton"><i class="iconfont">&#xe61e;</i></a></li>
+            <li class="text"><input type="text" value="1" id="pageNumInput"/> / 3</li>
+            <li><a href="javascript:;" title="下一页" id="nextPageButton"><i class="iconfont">&#xe61d;</i></a></li>
+        </ul>
+		  
+	    
+        <!-- 4-19搜索 -->
+        <div class="shop3">
+            <form class="min-search-form" action="" onsubmit='return false;'>
+                <!-- 搜索按钮 -->
+                <span class="min-btn" id="docSearchButton"><i class="iconfont">&#xe641;</i></span>
+               
+                <span class="min-btn" id="docSearchLoad" style="display:none"><img src="http://static.doc88.com/assets/images/subloading.gif" alt="" /></span>
+
+                <!-- 搜索框 -->
+                <span class="min-text"><input type="text" onfocus="this.placeholder=''" onblur="if(this.value=='')this.placeholder=' 在当前文档中搜索...';" placeholder=" 在当前文档中搜索..." id="docKeywordInput" /></span>
+            </form>
+
+            <div class="min-search-result" style="display:none" id="textSearchResultDiv">
+                <span class="min-result-close" id="searchExitButton" title="关闭搜索"></span>
+                <span class="min-result-pre" id="preSearchButton" title="下一个"></span>
+               <span class="min-result-next" id="nextSearchButton" title="上一个"></span>
+                <span id="searchNoSpan"></span>
+				<span id="searchResultSpan">
+				<span id="currentIndexSpan">1</span> / <span id="totalResultSpan">1</span> 结果</span>
+				<div class="search-doc">
+                    <a href="javascript:;" id="searchTextSiteButton" class="search-doc-link">去道客巴巴全站搜索</a>
+                </div>
+            </div>
+        </div>
+		 
+        <ul class="shop4">
+            <li><a href="javascript:;" title="举报该文档"  id="complaintButton"><i class="iconfont">&#xe609;</i></a></li>
+            <li><a href="javascript:;" title="我要写评论"  id="commentButton"><i class="iconfont">&#xe62c;</i></a></li>
+        </ul>
+        <ul class="shop4 share">
+            <li onclick="listShare(685013879,'5');"><a href="javascript:;" title="分享至道客圈" id="share_dcircle"><i class="iconfont">&#xe748;</i></a></li>
+            <li><a href="javascript:;" title="分享至微信朋友圈" id="share_wx"><i class="iconfont">&#xe622;</i></a></li>
+            <li><a href="javascript:;" title="分享至新浪微博" id="share_sina"><i class="iconfont">&#xe603;</i></a></li>
+            <li><a href="javascript:;" title="分享至QQ空间" id="share_qq"><i class="iconfont">&#xe627;</i></a></li>
+
+            <!--
+             <li><a href="javascript:;" title="分享至新浪微博" id="share_sina"><i class="iconfont">&#xe603;</i></a></li>
+            <li><a href="javascript:;" title="分享至腾讯微博" id="share_txwb"><i class="iconfont">&#xe604;</i></a></li>
+            <li><a href="javascript:;" title="分享至人人网" id="share_renren"><i class="iconfont">&#xe623;</i></a></li>
+            -->
+            <!-- <li class="more"><a href="javascript:share(product_id);" title="更多分享" id="share_more"><i class="iconfont">&#xe629;</i></a></li> -->
+        </ul>
+    </div>
+    <!--end mainpart-->
+</div>
+<!--end readshop-->
+
+<div class="content">
+  <div class="mainpart" id="mainpart">
+    <div  class="layout02" id="mainPanel" >
+      <div class="boxright" id="boxright">
+        <div class="commonbox3" id="box3">
+		
+		<div class="box">
+                  <div class="usercard">
+                      <dl class="imgtxt01">
+                          <dt><img src="http://www.doc88.com/snapshot/face/20120903/11810946-m.jpg" />
+	                          	                          
+	                                                     </dt>
+                          <dd>
+                              <h5>
+							                                <a href="/xiaoxyinianji" target="_blank" title="一年级资料..">
+							  一年级资料..
+                              </a>
+							  							  <a href="javascript:;" title="给TA发私信" class="mail"><i class="iconfont">&#xe626;</i></a></h5>
+                              <p>上传于：2015-04-10</p>
+                              <p>粉丝量：9</p>
+                          </dd>
+                      </dl>
+
+                      <div class="dropbox" >
+                          <div class="weibo">
+                              <p>该文档贡献者很忙，什么也没留下。</p>
+                          </div>
+                      </div>
+                      <a href="javascript:;" title="展开" class="drop"><i class="iconfont">&#xe629;&#xe618;</i></a>
+                  </div>
+                  <!--end usercard-->
+              </div>
+			  
+          
+        </div>
+        <!--end commonbox3-->
+        
+        <button class="btndown2" id="btndown2"><i class="iconfont">&#xe602;</i> 下载此文档</button>
+		<span style="display:none">
+		<button class="btn" onclick="download_scan()"><i class="iconfont">&#xe602;</i> 直接下载</button>
+		</span>
+        <div class="commonbox3" id="relatebox" style="padding:0 0;">
+				
+					  
+				<div class="sd-side">
+				<h3><a href="/tag/TDOA定位的Chan算法MATLAB源代码" target="_blank" class="sd-more">更多</a>相关文档 </h3>
+				<ul class="sd-side-box" id="recommedul">   
+					<div id="soapLoad" style="margin:auto 0px;text-align:center;height:60px;vertical-align:middle;line-height:60px;">
+                    <img src="http://static.doc88.com/assets/images/ajax-soap-loader.gif" align="absmiddle"/> 正在努力加载中...</div>
+				</ul>
+				</div>
+				             <!--end box-->
+				
+        </div>
+        <!--end commonbox3-->
+      </div>
+      <!--end boxright-->
+      <div class="boxleft" id="boxleft">
+        <!-- zip -->
+                <!--end zip -->
+          
+        <div class="commonbox2 doctopbox" id="box1">
+          <div class="doctopic">
+            <h1 title="TDOA定位的Chan算法MATLAB源代码"><img src="http://static.doc88.com/assets/images/icons/type/PDF.png" />TDOA定位的Chan算法MATLAB源代码</h1>
+            <div class="switch1" id="switch1"></div>
+			
+            <div class="score" style="-moz-user-select:none;" onselectstart="return false;">
+                        <span id="downloadpriceid">下载积分：<font color='red'>400</font></span>
+                        </div>
+            <div class="docoutline" >
+              <div class="outline">
+                <p>内容提示：<span id='p_intro_span'>TDOA定位的Chan算法MATLAB源代码</span></p>
+                </div>
+              <div class="attribute">
+                文档格式：PDF<span>|</span>
+                                浏览次数：442<span>|</span>
+                                上传日期：2015-04-10 12:31:42<span>|</span>
+              
+              <span class="doc-hot">文档星级：<i class='iconfont current'>&#xe60b;</i><i class='iconfont current'>&#xe60b;</i><i class='iconfont current'>&#xe60b;</i><i class='iconfont current'>&#xe60b;</i><i class='iconfont current'>&#xe60b;</i></span>
+
+            
+              </div>
+              <div class="switch" id="switch2"></div>
+            </div>
+          </div>
+          </div>
+                    <!--end documenttopic-->
+        
+		 <div class="smallimg" id="thumbPanel">
+          <ul class="imgtxt07 it07w1220" id="pagethumblist">            
+          </ul>
+          <div class="clearfix"></div>
+       
+        </div>
+        <!--end smallimg-->
+        <!--end commonbox2-->
+        <div class="page_view" id="pageContainer">
+			      		<script language="javascript">initPage();</script>
+			 	          <!--end documenttopic-->
+        </div>  
+        
+        		<div class="surplus" id="readEndDiv" style="display:none">
+            <div class="art-like">
+                <div class="success-like">成功点赞+1</div>
+                <div class="like-num"></div>
+            </div>
+                                      <p>全文阅读已结束，如果下载本文需要使用</p>
+                                                 <p class="uploader2"><i class="iconfont">&#xe71b;</i> 400 积分</p>
+                        <div class="surplus-operate">
+                                             <div class="surplus-btn-mid" id="downbtn3">
+                    <i class="iconfont">&#xe602;</i>下载此文档
+                </div>
+                <a class="surplus-down" href="javascript:;" id="gotorwbtn">文档不适合？发起文档求助吧~</a>
+                           </div>
+            <p class="share">分享至
+                <a href="javascript:;" onclick="listShare(685013879,'5');"><i class="iconfont dc">&#xe74a;</i> </a>
+                <a href="javascript:;" id="shareWxBtn"><i class="iconfont wx">&#xe71c;</i> </a>
+                <a href="javascript:;" id="shareQqBtn"><i class="iconfont qq">&#xe71d;</i></a>
+                <a href="javascript:;" onclick="share(product_id);"><i class="iconfont am">&#xe71f;</i></a>
+            </p>
+        </div>
+                <!--end commonbox2-->
+        
+        <div class="commonbox1" onselectstart="return false;" style="-moz-user-select:none;">
+          <div class="topic">
+            <h2>该用户还上传了这些文档</h2>
+          </div>
+          <div class="prev"></div>
+           <div class="next"></div>
+
+          <div class="box" id="bookbox" style="height:214px;">
+			            <!--end imgtxt04-->
+          </div>
+		  	
+        </div>
+        <!--end commonbox1-->
+        
+        <div id="commentDiv">
+        
+        
+        </div>
+        <!--end commentlist-->
+        
+      </div>
+      <!--end boxleft-->
+    </div>
+    <!--end layout01-->
+  </div>
+  <!--end mainpart-->
+</div>
+
+<span id="downtestw" style="visibility:hidden;position:absolute;bottom:0px;"><span class="link">TDOA定位的Chan算法MATLAB源代码</span></span>
+<div id="howinfo" style="display:none"></div>
+<div id="blkinfo"></div>
+<div id="complainInfo" style="overflow:hidden"></div>
+<div id="blkinfobuy" style="overflow:hidden"></div>  
+<div id="loadDiv" style="display:none">
+ 	<div style="width:100%; margin-left:auto; margin-right:auto; text-align:center;list-style:none; padding-top:20px;">
+        <ul style="list-style:none;">
+            <li style="padding-top:60px"><img src="http://static.doc88.com/assets/images/ajax-loader.gif"/></li>
+        </ul>
+    </div>
+</div>
+<form id="form_productbuy" action="http://www.doc88.com/doc.php?act=window_buy" method="post" target="doc88Window">
+<input type="hidden" value="0" id="stateDLRemainTimes"/>
+<input type="hidden" value="0" id="statePrintRemainTimes" name="statePrintRemainTimes"/>
+<input type="hidden" id="txtPname" name="txtPname" value="TDOA定位的Chan算法MATLAB源代码">
+<input type="hidden" id="txtPcode" name="txtPcode" value="7905821095236">
+<input type="hidden" id="txtPid" name="txtPid" value="685013879">
+<input type="hidden" id="txtPcid" name="txtPcid" value="575">
+<input type="hidden" id="txtPdocformat" name="txtPdocformat" value="PDF">
+<input type="hidden" id="txtPpagecount" name="txtPpagecount" value="3">
+<input type="hidden" id="txtPuploadtime" name="txtPuploadtime" value="1428640302">
+<input type="hidden" id="txtPpic" name="txtPpic" value="">
+<input type="hidden" id="txtPfree" name="txtPfree" value="1">
+<input type="hidden" id="txtPdownload" name="txtPdownload" value="2">
+<input type="hidden" id="txtPdlprice" name="txtPdlprice" value="4.00">
+<input type="hidden" id="txtPprint" name="txtPprint" value="">
+<input type="hidden" id="txtPprintprice" name="txtPprintprice" value="">
+<input type="hidden" id="txtPsellername" name="txtPsellername" value="xiaoxyinianji">
+<input type="hidden" id="txtPsellerid" name="txtPsellerid" value="11810946">
+<input type="hidden" id="txtDoMethod" name="txtDoMethod" value="0">
+ 
+<input type="hidden" id="txtPonlydownload" name="txtPonlydownload" value="1">
+    <input type="hidden" id="txtPdocurl" name="txtPdocurl" value="">                                
+</form>
+<!--end content-->
+<!--  
+ <div class="left-ad">
+    <a href="/renwu/index.php?act=task_index" class="taskMarket" target="_blank">
+     
+    </a>
+     <a href="javascript:;" class="close"></a>
+</div>
+-->
+
+<!-- 右侧活动
+<div class="draw-gif">
+    <a target="_blank" href="/uc/activity.php?act=spring_festival_activities">
+        <img src="http://static.doc88.com/assets/images/reading/draw.gif" alt="开工大吉" />
+    </a>
+    <i class="draw-close"></i>
+</div>
+<div class="draw-gif">
+    <a href="http://www.daokeyuedu.com" target="_blank" title="稻壳阅读器">
+        <img width="60" src="http://static.doc88.com/assets/images/reading/dc.png" alt="稻壳阅读器" />
+    </a>
+     <i class="draw-close"></i> 
+</div>
+-->
+ <div class="activelist">
+	<div class="mainpart">
+		<div class="columns">
+			<h3><a href="/help/about.html" target="_blank">关于我们</a></h3>
+			<ul>
+				<li><a href="/help/about.html" target="_blank">关于道客巴巴</a></li>
+				<li><a href="/help/join_wysjs.html" target="_blank">人才招聘</a></li>
+				<li><a href="/help/contact.html" target="_blank">联系我们</a></li>
+			</ul>
+			<ul>
+				<li><a href="/help/copyright_bqsm.html" target="_blank">网站声明</a></li>
+				<li><a href="/help/websitemap.html" target="_blank">网站地图</a></li>
+				<li><a href="/app.html" target="_blank">APP下载</a></li>
+			</ul>
+		</div>
+		<div class="columns">
+			<h3><a href="/help/help_list.html" target="_blank">帮助中心</a></h3>
+			<ul>
+				<li><a href="/help/help_info_1_1.html" target="_blank">会员注册</a></li>
+				<li><a href="/help/help_info_4_18.html" target="_blank">文档下载</a></li>
+				<li><a href="/help/help_info_4_19.html" target="_blank">如何获取积分</a></li>
+			</ul>
+		</div>
+		<div class="columns">
+			<h3>关注我们</h3>
+			<ul>
+				<li><a href="http://weibo.com/doc88" target="_blank" class="weibo">新浪微博</a>
+				
+				<!-- 
+				<iframe width="63" scrolling="no" height="24" frameborder="0" marginheight="0" marginwidth="0" border="0" allowtransparency="true" src="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=63&height=24&uid=1747483471&style=1&btn=red&dpc=1"></iframe>
+				 -->
+				</li>
+			</ul>
+		</div>
+		<div class="columns-ad">
+			<div class="qrcode">
+				<img src="http://static.doc88.com/assets/images/weixin.jpg" /><p>关注微信公众号</p>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<!--end activelist-->
+
+<div class="footer" id="footer">
+	<div class="mainpart"  style="min-width:950px;">
+		<div class="copyrught">
+			<p>道客巴巴网站 版权所有&nbsp;&nbsp;|&nbsp;?2008-2018&nbsp;&nbsp;|&nbsp;&nbsp;网站备案：京ICP备18056798号&nbsp;&nbsp;京公网安备1101082111号
+			
+						</p>
+		</div>
+		<div class="tel">
+			<a href="/help/contact.html" target="_blank" class="service-qq" title="在线客服"></a>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!--end footer-->
+<div class="toplayer-shop">
+		<div class="gotop">
+        <a href="javascript:downloaddkclient(1);" title="稻壳阅读" class="imglogo"><i class="iconfont">&#xe74f;</i></a>
+		<a href="javascript:downloaddkclient(1);" title="稻壳阅读" class="txtlogo">稻壳<br/>阅读</a>
+    </div>
+	<div class="gotop"  id="wx_read" style="display: block;" onclick="weixin_read('7905821095236')">
+        <a href="javascript:void(0)" title="微信阅读" class="imglogo"><i class="iconfont">&#xe622;</i></a>
+		<a href="javascript:void(0)" title="微信阅读" class="txtlogo">微信<br/>阅读</a>
+    </div>   
+	<div class="gotop"  id="app_read" style="display: block;" onclick="app_read('7905821095236')">
+        <a href="javascript:void(0)" title="APP阅读" class="imglogo"><i class="iconfont">&#xe6d4;</i></a>
+		<a href="javascript:void(0)" title="APP阅读" class="txtlogo">APP<br/>阅读</a>
+    </div>
+			<div class="gotop" id="gotop">
+        <a href="javascript:void(0)" title="返回顶部" class="imglogo"><i class="iconfont">&#xe61b;</i></a>
+		<a href="javascript:void(0)" title="返回顶部" class="txtlogo">返回<br/>顶部</a>
+    </div>
+    	<!--div class="gotop" id="gotop"></div-->
+</div>
+
+<script language="JavaScript" type="text/javascript" src="http://static.doc88.com/assets/js/searchsug.js"></script>
+<script language="JavaScript" type="text/javascript" src="http://static.doc88.com/assets/js/window.js" ></script>
+</body>
+
+<!--[if lt IE 10]>
+<script type="text/javascript" src="http://static.doc88.com/assets/iecss3/PIE.js"></script>
+<![endif]-->
+<script type="text/javascript">
+//
+
+$(function() {
+    if (window.PIE) {
+        $('.rounded').each(function() {
+            PIE.attach(this);
+        });
+    }
+});
+//任务推广关闭
+$(function(){
+  $('.left-ad .close').click(function() {
+    $(this).parents('.left-ad').hide();
+  });
+})
+$(function(){
+  $('.draw-gif .draw-close').click(function() {
+    $(this).parents('.draw-gif').hide();
+  });
+})
+</script>
+<script type="application/ld+json">
+{
+	"@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+	"@id": "http://www.doc88.com/p-7905821095236.html", //这里是当前网址
+	"appid": "1546865933989969", 
+	"title":"TDOA定位的Chan算法MATLAB源代码",
+	"images": [
+		"http://png.doc88.com/2013/06/28/8425978098687_160.png"
+	],
+	"description": "",
+	"pubDate": "2015-04-10T12:31:42",
+	"upDate": "2015-04-10T12:31:42",
+	"data":{
+        "WebPage":{
+            "headline":"TDOA定位的Chan算法MATLAB源代码",//当前页面标题
+            "tag":["算法,代码,定位,CHAN 算法,TDOA,实现定位,matlab,chan算法,定位的,chan"],
+            "wapUrl":"http://www.doc88.com/p-7905821095236.html",
+            "pcUrl":"http://www.doc88.com/p-7905821095236.html",
+            "mipUrl":"http://www.doc88.com/mip-7905821095236.html",
+            "datePublished":"2015-04-10T12:31:42",
+        }
+    }
+}
+</script>
+<script language="javascript" src="http://static.doc88.com/assets/js/count.js?c=313534333232313337373333383531342D3638353031333837392D31313831303934362D312D302D343432"></script>
+
+</html>
+ 
